@@ -1,14 +1,9 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 const Cards = ({ image, label, calories, totalWeight, cuisineType }) => {
-    let navigate = useNavigate();
     return (
         <>
             <div
                 className="col-xl-4 col-md-4 col-sm-12"
-                onClick={() => {
-                    navigate(`/description/${label}`);
-                }}
             >
                 <div className="product-card text-left">
                     <img className="img-responsive" src={image} alt={label} />
